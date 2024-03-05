@@ -88,6 +88,17 @@ Login to the OpenShift cluster's API server using the following command. Replace
 oc login $apiServer -u kubeadmin -p <kubeadmin password>
 ```
 
+## Enable Azure Service Health alerts
+
+Service Health notifications are messages sent by Red Hat SRE team to notify about maintenance actions planned ahead or to notify about actions that needs to be performed by the cluster owner.
+
+- Access the Azure Portal and select service **Service Health**.
+- From **Create Services Alerts** blade, select **Azure Red Hat OpenShift** as the service.
+- Select Multiple or Single region.
+- Create or use an existing Action Group. 
+
+[More about what is Azure Service Health](https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-monitor-guide)
+
 ## Next steps
 
 In this part of the tutorial, you learned how to:
